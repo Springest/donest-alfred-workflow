@@ -1,0 +1,73 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MultiXml	lib/multi_xml/parsers/libxml.rb	/^module MultiXml$/;"	m
+Parsers	lib/multi_xml/parsers/libxml.rb	/^  module Parsers$/;"	m	class:MultiXml
+Libxml	lib/multi_xml/parsers/libxml.rb	/^    module Libxml #:nodoc:$/;"	m	class:MultiXml.Parsers
+parse_error	lib/multi_xml/parsers/libxml.rb	/^      def parse_error() ::LibXML::XML::Error end$/;"	f	class:MultiXml.Parsers.Libxml
+parse	lib/multi_xml/parsers/libxml.rb	/^      def parse(xml)$/;"	f	class:MultiXml.Parsers.Libxml
+each_child	lib/multi_xml/parsers/libxml.rb	/^      def each_child(node, &block)$/;"	f	class:MultiXml.Parsers.Libxml
+each_attr	lib/multi_xml/parsers/libxml.rb	/^      def each_attr(node, &block)$/;"	f	class:MultiXml.Parsers.Libxml
+node_name	lib/multi_xml/parsers/libxml.rb	/^      def node_name(node)$/;"	f	class:MultiXml.Parsers.Libxml
+MultiXml	lib/multi_xml/parsers/libxml2_parser.rb	/^module MultiXml$/;"	m
+Parsers	lib/multi_xml/parsers/libxml2_parser.rb	/^  module Parsers$/;"	m	class:MultiXml
+Libxml2Parser	lib/multi_xml/parsers/libxml2_parser.rb	/^    module Libxml2Parser #:nodoc:$/;"	m	class:MultiXml.Parsers
+node_to_hash	lib/multi_xml/parsers/libxml2_parser.rb	/^      def node_to_hash(node, hash={})$/;"	f	class:MultiXml.Parsers.Libxml2Parser
+parse	lib/multi_xml/parsers/libxml2_parser.rb	/^      def parse(xml)$/;"	f	class:MultiXml.Parsers
+each_child	lib/multi_xml/parsers/libxml2_parser.rb	/^      def each_child(*args)$/;"	f	class:MultiXml.Parsers
+each_attr	lib/multi_xml/parsers/libxml2_parser.rb	/^      def each_attr(*args)$/;"	f	class:MultiXml.Parsers
+node_name	lib/multi_xml/parsers/libxml2_parser.rb	/^      def node_name(*args)$/;"	f	class:MultiXml.Parsers
+MultiXml	lib/multi_xml/parsers/nokogiri.rb	/^module MultiXml$/;"	m
+Parsers	lib/multi_xml/parsers/nokogiri.rb	/^  module Parsers$/;"	m	class:MultiXml
+Nokogiri	lib/multi_xml/parsers/nokogiri.rb	/^    module Nokogiri #:nodoc:$/;"	m	class:MultiXml.Parsers
+parse_error	lib/multi_xml/parsers/nokogiri.rb	/^      def parse_error() ::Nokogiri::XML::SyntaxError end$/;"	f	class:MultiXml.Parsers.Nokogiri
+parse	lib/multi_xml/parsers/nokogiri.rb	/^      def parse(xml)$/;"	f	class:MultiXml.Parsers.Nokogiri
+each_child	lib/multi_xml/parsers/nokogiri.rb	/^      def each_child(node, &block)$/;"	f	class:MultiXml.Parsers.Nokogiri
+each_attr	lib/multi_xml/parsers/nokogiri.rb	/^      def each_attr(node, &block)$/;"	f	class:MultiXml.Parsers.Nokogiri
+node_name	lib/multi_xml/parsers/nokogiri.rb	/^      def node_name(node)$/;"	f	class:MultiXml.Parsers.Nokogiri
+MultiXml	lib/multi_xml/parsers/ox.rb	/^module MultiXml$/;"	m
+Parsers	lib/multi_xml/parsers/ox.rb	/^  module Parsers$/;"	m	class:MultiXml
+Ox	lib/multi_xml/parsers/ox.rb	/^    module Ox #:nodoc:$/;"	m	class:MultiXml.Parsers
+parse_error	lib/multi_xml/parsers/ox.rb	/^      def parse_error$/;"	f	class:MultiXml.Parsers.Ox
+parse	lib/multi_xml/parsers/ox.rb	/^      def parse(io)$/;"	f	class:MultiXml.Parsers.Ox
+Handler	lib/multi_xml/parsers/ox.rb	/^      class Handler$/;"	c	class:MultiXml.Parsers.Ox
+initialize	lib/multi_xml/parsers/ox.rb	/^        def initialize()$/;"	f	class:MultiXml.Parsers.Ox.Handler
+doc	lib/multi_xml/parsers/ox.rb	/^        def doc$/;"	f	class:MultiXml.Parsers.Ox.Handler
+attr	lib/multi_xml/parsers/ox.rb	/^        def attr(name, value)$/;"	f	class:MultiXml.Parsers.Ox.Handler
+text	lib/multi_xml/parsers/ox.rb	/^        def text(value)$/;"	f	class:MultiXml.Parsers.Ox.Handler
+cdata	lib/multi_xml/parsers/ox.rb	/^        def cdata(value)$/;"	f	class:MultiXml.Parsers.Ox.Handler
+start_element	lib/multi_xml/parsers/ox.rb	/^        def start_element(name)$/;"	f	class:MultiXml.Parsers.Ox.Handler
+end_element	lib/multi_xml/parsers/ox.rb	/^        def end_element(name)$/;"	f	class:MultiXml.Parsers.Ox.Handler
+error	lib/multi_xml/parsers/ox.rb	/^        def error(message, line, column)$/;"	f	class:MultiXml.Parsers.Ox.Handler
+append	lib/multi_xml/parsers/ox.rb	/^        def append(key, value)$/;"	f	class:MultiXml.Parsers.Ox.Handler
+MultiXml	lib/multi_xml/parsers/rexml.rb	/^module MultiXml$/;"	m
+Parsers	lib/multi_xml/parsers/rexml.rb	/^  module Parsers$/;"	m	class:MultiXml
+Rexml	lib/multi_xml/parsers/rexml.rb	/^    module Rexml #:nodoc:$/;"	m	class:MultiXml.Parsers
+parse_error	lib/multi_xml/parsers/rexml.rb	/^      def parse_error; ::REXML::ParseException; end$/;"	f	class:MultiXml.Parsers.Rexml
+parse	lib/multi_xml/parsers/rexml.rb	/^      def parse(xml)$/;"	f	class:MultiXml.Parsers.Rexml
+merge_element!	lib/multi_xml/parsers/rexml.rb	/^      def merge_element!(hash, element)$/;"	f	class:MultiXml.Parsers.Rexml
+collapse	lib/multi_xml/parsers/rexml.rb	/^      def collapse(element)$/;"	f	class:MultiXml.Parsers.Rexml
+merge_texts!	lib/multi_xml/parsers/rexml.rb	/^      def merge_texts!(hash, element)$/;"	f	class:MultiXml.Parsers.Rexml
+merge!	lib/multi_xml/parsers/rexml.rb	/^      def merge!(hash, key, value)$/;"	f	class:MultiXml.Parsers.Rexml
+get_attributes	lib/multi_xml/parsers/rexml.rb	/^      def get_attributes(element)$/;"	f	class:MultiXml.Parsers.Rexml
+empty_content?	lib/multi_xml/parsers/rexml.rb	/^      def empty_content?(element)$/;"	f	class:MultiXml.Parsers.Rexml
+MultiXml	lib/multi_xml/version.rb	/^module MultiXml$/;"	m
+MultiXml	lib/multi_xml.rb	/^module MultiXml$/;"	m
+ParseError	lib/multi_xml.rb	/^  class ParseError < StandardError; end$/;"	c	class:MultiXml
+DisallowedTypeError	lib/multi_xml.rb	/^  class DisallowedTypeError < StandardError$/;"	c	class:MultiXml
+initialize	lib/multi_xml.rb	/^    def initialize(type)$/;"	f	class:MultiXml.DisallowedTypeError
+parser	lib/multi_xml.rb	/^    def parser$/;"	f	class:MultiXml
+default_parser	lib/multi_xml.rb	/^    def default_parser$/;"	f	class:MultiXml
+parser=	lib/multi_xml.rb	/^    def parser=(new_parser)$/;"	f	class:MultiXml
+parse	lib/multi_xml.rb	/^    def parse(xml, options={})$/;"	f	class:MultiXml
+FileLike	lib/multi_xml.rb	/^    module FileLike #:nodoc:$/;"	m	class:MultiXml
+original_filename	lib/multi_xml.rb	/^      def original_filename$/;"	f	class:MultiXml.FileLike
+content_type	lib/multi_xml.rb	/^      def content_type$/;"	f	class:MultiXml.FileLike
+parse_binary	lib/multi_xml.rb	/^    def parse_binary(binary, entity) #:nodoc:$/;"	f	class:MultiXml
+parse_file	lib/multi_xml.rb	/^    def parse_file(file, entity)$/;"	f	class:MultiXml
+symbolize_keys	lib/multi_xml.rb	/^    def symbolize_keys(params)$/;"	f	class:MultiXml
+undasherize_keys	lib/multi_xml.rb	/^    def undasherize_keys(params)$/;"	f	class:MultiXml
+typecast_xml_value	lib/multi_xml.rb	/^    def typecast_xml_value(value, disallowed_types=nil)$/;"	f	class:MultiXml

@@ -1,0 +1,53 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Ignore Foreman's .env file
+.env
+
+# Ignore bundler config
+.bundle
+
+# Ignore the default SQLite database.
+db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+log
+tmp
+backups
+
+# Ignore annoying system files
+.DS_Store
+
+# Ignore vim swap files
+*.sw?
+
+# Ignore auto-generated code coverage statistics
+coverage
+
+# Random NFS junk (Vagrant shared filesystem)
+.nfs*
+
+# Ignore public assets
+public/assets/*
+.sass-cache
+.rbenv-gemsets
+.rbenv-version
+.sass-cache
+
+# Ignore .rvmrc and .rspec
+.rvmrc
+.rspec
+
+ngrok
+#bundle/*
+
+.ruby-version
+config/database.yml.bak
+db/structure.rb
+
+#ctags stuff
+.tags
+.tags_sorted_by_file
+.powenv
+
+# Byebug history
+.byebug_history

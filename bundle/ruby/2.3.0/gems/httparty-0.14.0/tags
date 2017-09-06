@@ -1,0 +1,217 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+HTTParty	lib/httparty/connection_adapter.rb	/^module HTTParty$/;"	m
+ConnectionAdapter	lib/httparty/connection_adapter.rb	/^  class ConnectionAdapter$/;"	c	class:HTTParty
+call	lib/httparty/connection_adapter.rb	/^    def self.call(uri, options)$/;"	F	class:HTTParty.ConnectionAdapter
+initialize	lib/httparty/connection_adapter.rb	/^    def initialize(uri, options = {})$/;"	f	class:HTTParty.ConnectionAdapter
+connection	lib/httparty/connection_adapter.rb	/^    def connection$/;"	f	class:HTTParty.ConnectionAdapter
+clean_host	lib/httparty/connection_adapter.rb	/^    def clean_host(host)$/;"	f	class:HTTParty.ConnectionAdapter
+strip_ipv6_brackets	lib/httparty/connection_adapter.rb	/^    def strip_ipv6_brackets(host)$/;"	f	class:HTTParty.ConnectionAdapter
+ssl_implied?	lib/httparty/connection_adapter.rb	/^    def ssl_implied?(uri)$/;"	f	class:HTTParty.ConnectionAdapter
+verify_ssl_certificate?	lib/httparty/connection_adapter.rb	/^    def verify_ssl_certificate?$/;"	f	class:HTTParty.ConnectionAdapter
+attach_ssl_certificates	lib/httparty/connection_adapter.rb	/^    def attach_ssl_certificates(http, options)$/;"	f	class:HTTParty.ConnectionAdapter
+HTTParty	lib/httparty/cookie_hash.rb	/^class HTTParty::CookieHash < Hash #:nodoc:$/;"	c
+add_cookies	lib/httparty/cookie_hash.rb	/^  def add_cookies(value)$/;"	f	class:HTTParty
+to_cookie_string	lib/httparty/cookie_hash.rb	/^  def to_cookie_string$/;"	f	class:HTTParty
+HTTParty	lib/httparty/exceptions.rb	/^module HTTParty$/;"	m
+Error	lib/httparty/exceptions.rb	/^  class Error < StandardError; end$/;"	c	class:HTTParty
+UnsupportedFormat	lib/httparty/exceptions.rb	/^  class UnsupportedFormat < Error; end$/;"	c	class:HTTParty
+UnsupportedURIScheme	lib/httparty/exceptions.rb	/^  class UnsupportedURIScheme < Error; end$/;"	c	class:HTTParty
+ResponseError	lib/httparty/exceptions.rb	/^  class ResponseError < Error$/;"	c	class:HTTParty
+initialize	lib/httparty/exceptions.rb	/^    def initialize(response)$/;"	f	class:HTTParty.ResponseError
+RedirectionTooDeep	lib/httparty/exceptions.rb	/^  class RedirectionTooDeep < ResponseError; end$/;"	c	class:HTTParty
+DuplicateLocationHeader	lib/httparty/exceptions.rb	/^  class DuplicateLocationHeader < ResponseError; end$/;"	c	class:HTTParty
+HTTParty	lib/httparty/hash_conversions.rb	/^module HTTParty$/;"	m
+HashConversions	lib/httparty/hash_conversions.rb	/^  module HashConversions$/;"	m	class:HTTParty
+to_params	lib/httparty/hash_conversions.rb	/^    def self.to_params(hash)$/;"	F	class:HTTParty.HashConversions
+normalize_param	lib/httparty/hash_conversions.rb	/^    def self.normalize_param(key, value)$/;"	F	class:HTTParty.HashConversions
+HTTParty	lib/httparty/logger/apache_formatter.rb	/^module HTTParty$/;"	m
+Logger	lib/httparty/logger/apache_formatter.rb	/^  module Logger$/;"	m	class:HTTParty
+ApacheFormatter	lib/httparty/logger/apache_formatter.rb	/^    class ApacheFormatter #:nodoc:$/;"	c	class:HTTParty.Logger
+initialize	lib/httparty/logger/apache_formatter.rb	/^      def initialize(logger, level)$/;"	f	class:HTTParty.Logger.ApacheFormatter
+format	lib/httparty/logger/apache_formatter.rb	/^      def format(request, response)$/;"	f	class:HTTParty.Logger.ApacheFormatter
+HTTParty	lib/httparty/logger/curl_formatter.rb	/^module HTTParty$/;"	m
+Logger	lib/httparty/logger/curl_formatter.rb	/^  module Logger$/;"	m	class:HTTParty
+CurlFormatter	lib/httparty/logger/curl_formatter.rb	/^    class CurlFormatter #:nodoc:$/;"	c	class:HTTParty.Logger
+initialize	lib/httparty/logger/curl_formatter.rb	/^      def initialize(logger, level)$/;"	f	class:HTTParty.Logger.CurlFormatter
+format	lib/httparty/logger/curl_formatter.rb	/^      def format(request, response)$/;"	f	class:HTTParty.Logger.CurlFormatter
+log_request	lib/httparty/logger/curl_formatter.rb	/^      def log_request$/;"	f	class:HTTParty.Logger.CurlFormatter
+log_response	lib/httparty/logger/curl_formatter.rb	/^      def log_response$/;"	f	class:HTTParty.Logger.CurlFormatter
+log_url	lib/httparty/logger/curl_formatter.rb	/^      def log_url$/;"	f	class:HTTParty.Logger.CurlFormatter
+log_headers	lib/httparty/logger/curl_formatter.rb	/^      def log_headers$/;"	f	class:HTTParty.Logger
+log_query	lib/httparty/logger/curl_formatter.rb	/^      def log_query$/;"	f	class:HTTParty.Logger
+log_response_headers	lib/httparty/logger/curl_formatter.rb	/^      def log_response_headers$/;"	f	class:HTTParty.Logger
+log_hash	lib/httparty/logger/curl_formatter.rb	/^      def log_hash(hash)$/;"	f	class:HTTParty.Logger
+log	lib/httparty/logger/curl_formatter.rb	/^      def log(direction, line = '')$/;"	f	class:HTTParty.Logger
+time	lib/httparty/logger/curl_formatter.rb	/^      def time$/;"	f	class:HTTParty.Logger
+HTTParty	lib/httparty/logger/logger.rb	/^module HTTParty$/;"	m
+Logger	lib/httparty/logger/logger.rb	/^  module Logger$/;"	m	class:HTTParty
+formatters	lib/httparty/logger/logger.rb	/^    def self.formatters$/;"	F	class:HTTParty.Logger
+add_formatter	lib/httparty/logger/logger.rb	/^    def self.add_formatter(name, formatter)$/;"	F	class:HTTParty.Logger
+build	lib/httparty/logger/logger.rb	/^    def self.build(logger, level, formatter)$/;"	F	class:HTTParty.Logger
+HTTParty	lib/httparty/module_inheritable_attributes.rb	/^module HTTParty$/;"	m
+ModuleInheritableAttributes	lib/httparty/module_inheritable_attributes.rb	/^  module ModuleInheritableAttributes #:nodoc:$/;"	m	class:HTTParty
+included	lib/httparty/module_inheritable_attributes.rb	/^    def self.included(base)$/;"	F	class:HTTParty.ModuleInheritableAttributes
+hash_deep_dup	lib/httparty/module_inheritable_attributes.rb	/^    def self.hash_deep_dup(hash)$/;"	F	class:HTTParty.ModuleInheritableAttributes
+ClassMethods	lib/httparty/module_inheritable_attributes.rb	/^    module ClassMethods #:nodoc:$/;"	m	class:HTTParty
+mattr_inheritable	lib/httparty/module_inheritable_attributes.rb	/^      def mattr_inheritable(*args)$/;"	f	class:HTTParty.ClassMethods
+inherited	lib/httparty/module_inheritable_attributes.rb	/^      def inherited(subclass)$/;"	f	class:HTTParty.ClassMethods
+Net	lib/httparty/net_digest_auth.rb	/^module Net$/;"	m
+HTTPHeader	lib/httparty/net_digest_auth.rb	/^  module HTTPHeader$/;"	m	class:Net
+digest_auth	lib/httparty/net_digest_auth.rb	/^    def digest_auth(username, password, response)$/;"	f	class:Net.HTTPHeader
+append_cookies	lib/httparty/net_digest_auth.rb	/^    def append_cookies(authenticator)$/;"	f	class:Net.HTTPHeader
+DigestAuthenticator	lib/httparty/net_digest_auth.rb	/^    class DigestAuthenticator$/;"	c	class:Net.HTTPHeader
+initialize	lib/httparty/net_digest_auth.rb	/^      def initialize(username, password, method, path, response_header)$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+authorization_header	lib/httparty/net_digest_auth.rb	/^      def authorization_header$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+cookie_header	lib/httparty/net_digest_auth.rb	/^      def cookie_header$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+parse	lib/httparty/net_digest_auth.rb	/^      def parse(response_header)$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+parse_cookies	lib/httparty/net_digest_auth.rb	/^      def parse_cookies(response_header)$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+opaque_present?	lib/httparty/net_digest_auth.rb	/^      def opaque_present?$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+qop_present?	lib/httparty/net_digest_auth.rb	/^      def qop_present?$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+random	lib/httparty/net_digest_auth.rb	/^      def random$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+request_digest	lib/httparty/net_digest_auth.rb	/^      def request_digest$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+md5	lib/httparty/net_digest_auth.rb	/^      def md5(str)$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+algorithm_present?	lib/httparty/net_digest_auth.rb	/^      def algorithm_present?$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+use_md5_sess?	lib/httparty/net_digest_auth.rb	/^      def use_md5_sess?$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+a1	lib/httparty/net_digest_auth.rb	/^      def a1$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+a2	lib/httparty/net_digest_auth.rb	/^      def a2$/;"	f	class:Net.HTTPHeader.DigestAuthenticator
+HTTParty	lib/httparty/parser.rb	/^module HTTParty$/;"	m
+Parser	lib/httparty/parser.rb	/^  class Parser$/;"	c	class:HTTParty
+call	lib/httparty/parser.rb	/^    def self.call(body, format)$/;"	F	class:HTTParty.Parser
+formats	lib/httparty/parser.rb	/^    def self.formats$/;"	F	class:HTTParty.Parser
+format_from_mimetype	lib/httparty/parser.rb	/^    def self.format_from_mimetype(mimetype)$/;"	F	class:HTTParty.Parser
+supported_formats	lib/httparty/parser.rb	/^    def self.supported_formats$/;"	F	class:HTTParty.Parser
+supports_format	lib/httparty/parser.rb	/^    def self.supports_format?(format)$/;"	F	class:HTTParty.Parser
+initialize	lib/httparty/parser.rb	/^    def initialize(body, format)$/;"	f	class:HTTParty.Parser
+parse	lib/httparty/parser.rb	/^    def parse$/;"	f	class:HTTParty.Parser
+xml	lib/httparty/parser.rb	/^    def xml$/;"	f	class:HTTParty.Parser
+json	lib/httparty/parser.rb	/^    def json$/;"	f	class:HTTParty.Parser
+csv	lib/httparty/parser.rb	/^    def csv$/;"	f	class:HTTParty.Parser
+html	lib/httparty/parser.rb	/^    def html$/;"	f	class:HTTParty.Parser
+plain	lib/httparty/parser.rb	/^    def plain$/;"	f	class:HTTParty.Parser
+supports_format?	lib/httparty/parser.rb	/^    def supports_format?$/;"	f	class:HTTParty.Parser
+parse_supported_format	lib/httparty/parser.rb	/^    def parse_supported_format$/;"	f	class:HTTParty.Parser
+HTTParty	lib/httparty/request.rb	/^module HTTParty$/;"	m
+Request	lib/httparty/request.rb	/^  class Request #:nodoc:$/;"	c	class:HTTParty
+initialize	lib/httparty/request.rb	/^    def initialize(http_method, path, o = {})$/;"	f	class:HTTParty.Request
+path=	lib/httparty/request.rb	/^    def path=(uri)$/;"	f	class:HTTParty.Request
+request_uri	lib/httparty/request.rb	/^    def request_uri(uri)$/;"	f	class:HTTParty.Request
+uri	lib/httparty/request.rb	/^    def uri$/;"	f	class:HTTParty.Request
+base_uri	lib/httparty/request.rb	/^    def base_uri$/;"	f	class:HTTParty.Request
+format	lib/httparty/request.rb	/^    def format$/;"	f	class:HTTParty.Request
+parser	lib/httparty/request.rb	/^    def parser$/;"	f	class:HTTParty.Request
+connection_adapter	lib/httparty/request.rb	/^    def connection_adapter$/;"	f	class:HTTParty.Request
+perform	lib/httparty/request.rb	/^    def perform(&block)$/;"	f	class:HTTParty.Request
+raw_body	lib/httparty/request.rb	/^    def raw_body$/;"	f	class:HTTParty.Request
+http	lib/httparty/request.rb	/^    def http$/;"	f	class:HTTParty.Request
+body	lib/httparty/request.rb	/^    def body$/;"	f	class:HTTParty.Request
+credentials	lib/httparty/request.rb	/^    def credentials$/;"	f	class:HTTParty.Request
+username	lib/httparty/request.rb	/^    def username$/;"	f	class:HTTParty.Request
+password	lib/httparty/request.rb	/^    def password$/;"	f	class:HTTParty.Request
+normalize_query	lib/httparty/request.rb	/^    def normalize_query(query)$/;"	f	class:HTTParty.Request
+query_string_normalizer	lib/httparty/request.rb	/^    def query_string_normalizer$/;"	f	class:HTTParty.Request
+setup_raw_request	lib/httparty/request.rb	/^    def setup_raw_request$/;"	f	class:HTTParty.Request
+setup_digest_auth	lib/httparty/request.rb	/^    def setup_digest_auth$/;"	f	class:HTTParty.Request
+query_string	lib/httparty/request.rb	/^    def query_string(uri)$/;"	f	class:HTTParty.Request
+get_charset	lib/httparty/request.rb	/^    def get_charset$/;"	f	class:HTTParty.Request
+encode_with_ruby_encoding	lib/httparty/request.rb	/^    def encode_with_ruby_encoding(body, charset)$/;"	f	class:HTTParty.Request
+assume_utf16_is_big_endian	lib/httparty/request.rb	/^    def assume_utf16_is_big_endian$/;"	f	class:HTTParty.Request
+encode_utf_16	lib/httparty/request.rb	/^    def encode_utf_16(body)$/;"	f	class:HTTParty.Request
+_encode_body	lib/httparty/request.rb	/^    def _encode_body(body)$/;"	f	class:HTTParty.Request
+encode_body	lib/httparty/request.rb	/^    def encode_body(body)$/;"	f	class:HTTParty.Request
+handle_response	lib/httparty/request.rb	/^    def handle_response(body, &block)$/;"	f	class:HTTParty.Request
+handle_deflation	lib/httparty/request.rb	/^    def handle_deflation$/;"	f	class:HTTParty.Request
+handle_host_redirection	lib/httparty/request.rb	/^    def handle_host_redirection$/;"	f	class:HTTParty.Request
+check_duplicate_location_header	lib/httparty/request.rb	/^    def check_duplicate_location_header$/;"	f	class:HTTParty.Request
+send_authorization_header?	lib/httparty/request.rb	/^    def send_authorization_header?$/;"	f	class:HTTParty.Request
+response_redirects?	lib/httparty/request.rb	/^    def response_redirects?$/;"	f	class:HTTParty.Request
+parse_response	lib/httparty/request.rb	/^    def parse_response(body)$/;"	f	class:HTTParty.Request
+capture_cookies	lib/httparty/request.rb	/^    def capture_cookies(response)$/;"	f	class:HTTParty.Request
+format_from_mimetype	lib/httparty/request.rb	/^    def format_from_mimetype(mimetype)$/;"	f	class:HTTParty.Request
+validate	lib/httparty/request.rb	/^    def validate$/;"	f	class:HTTParty.Request
+post?	lib/httparty/request.rb	/^    def post?$/;"	f	class:HTTParty.Request
+set_basic_auth_from_uri	lib/httparty/request.rb	/^    def set_basic_auth_from_uri$/;"	f	class:HTTParty.Request
+HTTParty	lib/httparty/response/headers.rb	/^module HTTParty$/;"	m
+Response	lib/httparty/response/headers.rb	/^  class Response #:nodoc:$/;"	c	class:HTTParty
+Headers	lib/httparty/response/headers.rb	/^    class Headers$/;"	c	class:HTTParty.Response
+initialize	lib/httparty/response/headers.rb	/^      def initialize(header = {})$/;"	f	class:HTTParty.Response.Headers
+==	lib/httparty/response/headers.rb	/^      def ==(other)$/;"	f	class:HTTParty.Response.Headers
+inspect	lib/httparty/response/headers.rb	/^      def inspect$/;"	f	class:HTTParty.Response.Headers
+method_missing	lib/httparty/response/headers.rb	/^      def method_missing(name, *args, &block)$/;"	f	class:HTTParty.Response.Headers
+respond_to?	lib/httparty/response/headers.rb	/^      def respond_to?(method, include_all = false)$/;"	f	class:HTTParty.Response.Headers
+HTTParty	lib/httparty/response.rb	/^module HTTParty$/;"	m
+Response	lib/httparty/response.rb	/^  class Response < BasicObject$/;"	c	class:HTTParty
+underscore	lib/httparty/response.rb	/^    def self.underscore(string)$/;"	F	class:HTTParty.Response
+initialize	lib/httparty/response.rb	/^    def initialize(request, response, parsed_block, options = {})$/;"	f	class:HTTParty.Response
+parsed_response	lib/httparty/response.rb	/^    def parsed_response$/;"	f	class:HTTParty.Response
+class	lib/httparty/response.rb	/^    def class$/;"	f	class:HTTParty.Response
+is_a?	lib/httparty/response.rb	/^    def is_a?(klass)$/;"	f	class:HTTParty.Response
+code	lib/httparty/response.rb	/^    def code$/;"	f	class:HTTParty.Response
+tap	lib/httparty/response.rb	/^    def tap$/;"	f	class:HTTParty.Response
+inspect	lib/httparty/response.rb	/^    def inspect$/;"	f	class:HTTParty.Response
+respond_to?	lib/httparty/response.rb	/^    def respond_to?(name, include_all = false)$/;"	f	class:HTTParty.Response
+method_missing	lib/httparty/response.rb	/^    def method_missing(name, *args, &block)$/;"	f	class:HTTParty.Response
+throw_exception	lib/httparty/response.rb	/^    def throw_exception$/;"	f	class:HTTParty.Response
+HTTParty	lib/httparty/version.rb	/^module HTTParty$/;"	m
+HTTParty	lib/httparty.rb	/^module HTTParty$/;"	m
+included	lib/httparty.rb	/^  def self.included(base)$/;"	F	class:HTTParty
+ClassMethods	lib/httparty.rb	/^  module ClassMethods$/;"	m	class:HTTParty
+logger	lib/httparty.rb	/^    def logger(logger, level = :info, format = :apache)$/;"	f	class:HTTParty.ClassMethods
+raise_on	lib/httparty.rb	/^    def raise_on(codes = [])$/;"	f	class:HTTParty.ClassMethods
+http_proxy	lib/httparty.rb	/^    def http_proxy(addr = nil, port = nil, user = nil, pass = nil)$/;"	f	class:HTTParty.ClassMethods
+base_uri	lib/httparty.rb	/^    def base_uri(uri = nil)$/;"	f	class:HTTParty.ClassMethods
+basic_auth	lib/httparty.rb	/^    def basic_auth(u, p)$/;"	f	class:HTTParty.ClassMethods
+digest_auth	lib/httparty.rb	/^    def digest_auth(u, p)$/;"	f	class:HTTParty.ClassMethods
+disable_rails_query_string_format	lib/httparty.rb	/^    def disable_rails_query_string_format$/;"	f	class:HTTParty.ClassMethods
+default_params	lib/httparty.rb	/^    def default_params(h = {})$/;"	f	class:HTTParty.ClassMethods
+default_timeout	lib/httparty.rb	/^    def default_timeout(t)$/;"	f	class:HTTParty.ClassMethods
+open_timeout	lib/httparty.rb	/^    def open_timeout(t)$/;"	f	class:HTTParty.ClassMethods
+read_timeout	lib/httparty.rb	/^    def read_timeout(t)$/;"	f	class:HTTParty.ClassMethods
+debug_output	lib/httparty.rb	/^    def debug_output(stream = $stderr)$/;"	f	class:HTTParty.ClassMethods
+headers	lib/httparty.rb	/^    def headers(h = {})$/;"	f	class:HTTParty.ClassMethods
+cookies	lib/httparty.rb	/^    def cookies(h = {})$/;"	f	class:HTTParty.ClassMethods
+follow_redirects	lib/httparty.rb	/^    def follow_redirects(value = true)$/;"	f	class:HTTParty.ClassMethods
+format	lib/httparty.rb	/^    def format(f = nil)$/;"	f	class:HTTParty.ClassMethods
+no_follow	lib/httparty.rb	/^    def no_follow(value = false)$/;"	f	class:HTTParty.ClassMethods
+maintain_method_across_redirects	lib/httparty.rb	/^    def maintain_method_across_redirects(value = true)$/;"	f	class:HTTParty.ClassMethods
+resend_on_redirect	lib/httparty.rb	/^    def resend_on_redirect(value = true)$/;"	f	class:HTTParty.ClassMethods
+pem	lib/httparty.rb	/^    def pem(pem_contents, password = nil)$/;"	f	class:HTTParty.ClassMethods
+pkcs12	lib/httparty.rb	/^    def pkcs12(p12_contents, password)$/;"	f	class:HTTParty.ClassMethods
+query_string_normalizer	lib/httparty.rb	/^    def query_string_normalizer(normalizer)$/;"	f	class:HTTParty.ClassMethods
+ssl_version	lib/httparty.rb	/^    def ssl_version(version)$/;"	f	class:HTTParty.ClassMethods
+ciphers	lib/httparty.rb	/^    def ciphers(cipher_names)$/;"	f	class:HTTParty.ClassMethods
+ssl_ca_file	lib/httparty.rb	/^    def ssl_ca_file(path)$/;"	f	class:HTTParty.ClassMethods
+ssl_ca_path	lib/httparty.rb	/^    def ssl_ca_path(path)$/;"	f	class:HTTParty.ClassMethods
+parser	lib/httparty.rb	/^    def parser(custom_parser = nil)$/;"	f	class:HTTParty.ClassMethods
+uri_adapter	lib/httparty.rb	/^    def uri_adapter(uri_adapter)$/;"	f	class:HTTParty.ClassMethods
+connection_adapter	lib/httparty.rb	/^    def connection_adapter(custom_adapter = nil, options = nil)$/;"	f	class:HTTParty.ClassMethods
+get	lib/httparty.rb	/^    def get(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+post	lib/httparty.rb	/^    def post(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+patch	lib/httparty.rb	/^    def patch(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+put	lib/httparty.rb	/^    def put(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+delete	lib/httparty.rb	/^    def delete(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+move	lib/httparty.rb	/^    def move(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+copy	lib/httparty.rb	/^    def copy(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+head	lib/httparty.rb	/^    def head(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+options	lib/httparty.rb	/^    def options(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+mkcol	lib/httparty.rb	/^    def mkcol(path, options = {}, &block)$/;"	f	class:HTTParty.ClassMethods
+ensure_method_maintained_across_redirects	lib/httparty.rb	/^    def ensure_method_maintained_across_redirects(options)$/;"	f	class:HTTParty.ClassMethods
+perform_request	lib/httparty.rb	/^    def perform_request(http_method, path, options, &block) #:nodoc:$/;"	f	class:HTTParty.ClassMethods
+process_headers	lib/httparty.rb	/^    def process_headers(options)$/;"	f	class:HTTParty.ClassMethods
+process_cookies	lib/httparty.rb	/^    def process_cookies(options) #:nodoc:$/;"	f	class:HTTParty.ClassMethods
+validate_format	lib/httparty.rb	/^    def validate_format$/;"	f	class:HTTParty.ClassMethods
+normalize_base_uri	lib/httparty.rb	/^  def self.normalize_base_uri(url) #:nodoc:$/;"	F	class:HTTParty
+Basement	lib/httparty.rb	/^  class Basement #:nodoc:$/;"	c	class:HTTParty
+get	lib/httparty.rb	/^  def self.get(*args, &block)$/;"	F	class:HTTParty
+post	lib/httparty.rb	/^  def self.post(*args, &block)$/;"	F	class:HTTParty
+patch	lib/httparty.rb	/^  def self.patch(*args, &block)$/;"	F	class:HTTParty
+put	lib/httparty.rb	/^  def self.put(*args, &block)$/;"	F	class:HTTParty
+delete	lib/httparty.rb	/^  def self.delete(*args, &block)$/;"	F	class:HTTParty
+move	lib/httparty.rb	/^  def self.move(*args, &block)$/;"	F	class:HTTParty
+copy	lib/httparty.rb	/^  def self.copy(*args, &block)$/;"	F	class:HTTParty
+head	lib/httparty.rb	/^  def self.head(*args, &block)$/;"	F	class:HTTParty
+options	lib/httparty.rb	/^  def self.options(*args, &block)$/;"	F	class:HTTParty
