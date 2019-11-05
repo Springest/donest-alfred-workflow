@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'httparty'
+require "net/http"
+require "uri"
 
 class Done
   attr_reader :description
@@ -8,14 +9,14 @@ class Done
   def initialize(query, user)
     @description = query
     @user = user
-    @date = DateTime.now
+    @date = Time.now
 
     process_done
   end
 
   def process_done
     if done_saved
-      puts "'#{@description}' is saved!"
+      puts "#{@description} is saved!"
     else
       puts "Error: unable to save your done."
     end
@@ -29,15 +30,15 @@ class Done
       :date => @date
     }
 
-    response = HTTParty.post(
-      #'http://localhost:3000/dones.json',
-      'https://donest.herokuapp.com/dones.json',
-      :body => { done: done }.to_json,
-      :headers => {
-        'Content-Type' => 'application/json',
-        'X-User-Email' => "#{@user['email']}",
-        'X-User-Token' => "#{@user['token']}"
-      })
+    response = Net::HTTP.post(
+      #URI("http://localhost:3000/dones.json"),
+      URI("https://donest.herokuapp.com/dones.json"),
+      done.to_json,
+      "Content-Type" => "application/json",
+      "X-User-Email" => "#{@user["email"]}",
+      "X-User-Token" => "#{@user["token"]}"
+
+    )
 
     return false if response["error"]
 
